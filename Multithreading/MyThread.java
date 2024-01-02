@@ -1,12 +1,8 @@
-
-import java.util.*;
-
-
 public class MyThread extends Thread {
     public void run() {
         for (int i = 0; i <= 5; i++) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 System.out.println(e);
             }
@@ -18,7 +14,7 @@ public class MyThread extends Thread {
     public static class MyOtherThread extends Thread {
         public void run() {
             for (int j = 0; j <= 5; j++) {
-                System.out.println("From thread 2: " + j);
+                System.out.println(Thread.currentThread().getName() + ":" + j);
             }
             System.out.println("End of thread 2");
         }

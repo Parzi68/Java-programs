@@ -1,5 +1,4 @@
 import java.util.*;
-import java.io.*;
 class vector_ex{
     public static void main(String[] args){
         Vector<Integer> v = new Vector<Integer>();
