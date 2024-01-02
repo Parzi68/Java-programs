@@ -17,6 +17,8 @@ class mo{
     public static void main(String[] args){
         mo mo = new mo();
 
+        //function with same name have different types of datatypes and perform different operations
+
         int result1= mo.add(15,20);
         System.out.println(result1);
 
